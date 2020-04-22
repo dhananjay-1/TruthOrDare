@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/game_background"
+        >
+
+        <TextView
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/calligraffitti"
+            android:text="No one in the house yet, bring them all"
+            android:textAlignment="center"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            />
+
+        <Button
+            android:id="@+id/btnAddPlayers"
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:text="Add Participants"
+            android:textAllCaps="false"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:clickable="true"
+            android:background="@drawable/gradient_background"
+            android:onClick="addPlayers"
+            />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/game_start_background"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7"
+            android:layout_margin="20dp"
+            android:orientation="vertical"
+            >
+
+            <Button
+                android:id="@+id/btnGo"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="GO"
+                android:textSize="20sp"
+                android:background="@drawable/gradient_background"
+                 />
+
+            <TextView
+                android:id="@+id/TextViewPlayer"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:fontFamily="@font/calligraffitti"
+                android:gravity="center_horizontal"
+                android:text="player"
+                android:textSize="50dp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                >
+                <Button
+                    android:id="@+id/btnTruth"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Truth"
+                    android:background="@color/colorBlue"
+                    />
+                <Button
+                    android:id="@+id/btnDare"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Dare"
+                    android:background="@color/colorRed"
+                    />
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginTop="0dp"
+                android:gravity="center_horizontal"
+                android:text="Score Board"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorDarkBlue"
+                />
+
+
+            <LinearLayout
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4"
+                >
+
+                <ListView
+                    android:id="@+id/ListView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnEndGame"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_margin="20dp"
+            android:text="End Game"
+            android:textSize="30sp"
+            android:background="@drawable/gradient_background"
+            />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
